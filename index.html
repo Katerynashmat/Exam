@@ -8,5 +8,22 @@
 <body>
     <h1>Katya</h1>
     <h1>Hello</h1>
+    <form action="/update" method="post" name="update">
+        <p class="Vhozdenie"><br>Update data<br></p>
+        <p class="ImejlParol">Title</p>
+        <input class="input" type="text" name="title" required>
+        <p class="ImejlParol">Photo</p>
+        <input class="input" type="text" name="photo" required>
+        <p class="ImejlParol">Text</p>
+        <input class="input" type="text" name="text" required>
+        <p><input type="submit" value="Update" name="reg"> </p>
+    </form>
+
+    <form action="/delete" method="post" name="delete">
+        <p class="Vhozdenie"><br>Delete data<br></p>
+        <p class="ImejlParol">ID</p>
+        <input class="input" type="text" name="id" required>
+        <p><input type="submit" value="Delete" name="reg"> </p>
+    </form>
 </body>
 </html>

@@ -24,6 +24,10 @@ app.use(allowCrossDomain);
 
 // app.post('/Login/Login.html', urlencodedParser, db.login)
 
+app.post('/delete', urlencodedParser, db.deleteData)
+
+app.post('/update', urlencodedParser, db.update)
+
 app.get('/data', urlencodedParser, db.getTable)
 
 app.get('*', (request, response) => {
